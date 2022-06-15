@@ -5,13 +5,13 @@
     state: present
     update_cache: yes
     cache_valid_time: 3600
-  become: yes
+  become: true
 
 - name: start nginx
   service:
     name: nginx
     state: started
-  become: yes
+  become: true
 
 - name: index
   template:
